@@ -1,0 +1,19 @@
+{
+  "name": "colormyar",
+  "version": "1.1.0",
+  "description": "![preview](https://github.com/sanlinhtik3/pdf-color/raw/main/access/img/screenshot.png)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sanlinhtik3/colormyar.git"
+  },
+  "author": "sanlinhtike",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sanlinhtik3/colormyar/issues"
+  },
+  "homepage": "https://github.com/sanlinhtik3/colormyar#readme"
+}

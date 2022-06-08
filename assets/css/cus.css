@@ -1,0 +1,372 @@
+@font-face {
+    font-family: walone-bold;
+    font-weight: bold;
+    src: url("../fonts/Z06-Walone Bold.ttf");
+}
+@font-face {
+    font-family: walone-reqular;
+    font-weight: normal;
+    src: url("../fonts/Z06-Walone Regular.ttf");
+}
+@font-face {
+    font-family: walone-Thin;
+    font-weight: 100;
+    src: url("../fonts/Z06-Walone Thin.ttf");
+}
+@font-face {
+    font-family: Cera-Round;
+    font-weight: normal;
+    src: url("../fonts/TypeMates  CeraRoundProRegular.otf");
+}
+
+* {
+    font-family: walone-bold;
+}
+
+.walone-bold {
+    font-family: walone-bold;
+}
+.walone-regular {
+    font-family: walone-reqular;
+}
+
+.line {
+    width: 2px;
+    height: 18rem;
+    background-color: #000;
+}
+
+.top-right {
+    left: 2rem;
+    top: 5rem;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+}
+
+.water-mark {
+    font-size: 5rem;
+    font-weight: bold;
+    position: absolute;
+    color: var(--pdf-slate-100);
+    top: -5rem;
+    right: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.z-index-1 {
+    z-index: 1;
+}
+.z-index-2 {
+    z-index: 2;
+}
+.z-index-3 {
+    z-index: 3;
+}
+.z-index-n1 {
+    z-index: -1;
+}
+
+/*menu icon*/
+.menu-icon {
+    width: 50px;
+    height: 50px;
+    /*background-color: #fff;*/
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu-icon span {
+    width: 40px;
+    height: 4px;
+    background-color: var(--bs-primary);
+    position: absolute;
+    border-radius: 25px;
+    transition: 0.5s;
+}
+.menu-icon span:nth-child(1) {
+    transform: translateY(-15px);
+    width: 25px;
+    left: 5px;
+}
+.menu-icon span:nth-child(2) {
+    transform: translateY(15px);
+    width: 15px;
+    left: 5px;
+}
+.menu-icon.show span:nth-child(3) {
+    transform: translateX(-60px);
+    opacity: 0;
+}
+.menu-icon.show span:nth-child(1) {
+    transform: translateY(0) rotate(45deg);
+    width: 40px;
+    transition: 0.125s;
+}
+.menu-icon.show span:nth-child(2) {
+    transform: translateY(0) rotate(315deg);
+    width: 40px;
+    transition: 0.25s;
+}
+
+.o-n:focus {
+    box-shadow: none;
+}
+
+
+/*Slick */
+.slick-prev::before
+{
+    font-family: "Font Awesome 6 Free";
+    content: '\2039';
+    font-size: 3rem;
+    color: var(--bs-primary);
+}
+
+.slick-next::before
+{
+    font-family: "Font Awesome 6 Free";
+    content: '\203a';
+    font-size: 3rem;
+    color: var(--bs-primary);
+}
+
+.slick-dots {
+    bottom: -50px;
+}
+
+.slick-dots li {
+    width: 10px;
+    height: 10px;
+    background-color: var(--pdf-blue-200);
+    border: 2px solid var(--bs-primary);
+    border-radius: 50%;
+}
+
+.slick-dots li.slick-active {
+    background-color: var(--bs-primary);
+}
+
+.slick-dots li button:before {
+    display: none;
+}
+
+.slick-next {
+    right: 50px;
+}
+.slick-prev {
+    left: 50px;
+    z-index: 1;
+}
+
+.slick-prev::before,
+.slick-next::before {
+    padding-bottom: 10px;
+}
+
+.slick-prev,
+.slick-next {
+    border: 1px solid var(--bs-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 26px;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+.slick-prev:hover,
+.slick-next:hover {
+    transform: scale(0.9);
+}
+
+.home-svg {
+    width: 20rem;
+}
+
+.navbar-control {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+.active-link {
+    color: var(--bs-primary);
+    position: relative;
+}
+
+.active-link::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%,-50%)!important;
+    width: 10px;
+    height: 10px;
+    background-color: var(--bs-primary);
+    border-radius: 50%;
+}
+
+/*Scroll To Top*/
+.footer-fixed {
+    position: fixed;
+    bottom: 40px;
+    right: 30px;
+}
+
+.footer-icon {
+    width: 50px;
+    height: 50px;
+    z-index: 5;
+}
+
+.footer-fixed.show {
+    display: block!important;
+}
+
+
+/*margin*/
+.my-32 {
+    margin-top: 8rem!important; /* 128px */
+    margin-bottom: 8rem!important; /* 128px */
+}
+
+.mt-32 {
+    margin-top: 8rem!important; /* 128px */
+}
+
+.mb-32 {
+    margin-bottom: 8rem !important; /* 128px */
+}
+
+/*--- button group ---*/
+.button-group .btn:focus{
+    /*outline: none!important;*/
+    box-shadow: none;
+    border-radius: 0!important;
+}
+.button-group .btn{
+    color: var(--bs-primary);
+    border-color: transparent!important;
+    border-bottom: 2px solid transparent!important;
+}
+.button-group .btn-outline-primary:hover {
+    color:var(--bs-primary);
+    background-color: transparent!important;
+    border-bottom-color: var(--bs-primary)!important;
+}
+.button-group .active{
+    border-bottom-color: var(--bs-primary)!important;
+    background-color: transparent!important;
+    transition: 0.3s;
+}
+
+@media screen and (max-width: 1200px) {
+    .top-right {
+        left: 0.8rem;
+    }
+    .line {
+        width: 2px;
+        height: 12rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .water-mark {
+        font-size: 4rem;
+    }
+    .slick-prev,
+    .slick-next{
+        top: 104%;
+        z-index: 2;
+    }
+    .slick-next {
+        right: 580px;
+    }
+    .slick-prev {
+        left: 0;
+        z-index: 1;
+    }
+    .slick-dots {
+        bottom: -35px;
+        display: flex;
+        justify-content: end;
+        z-index: 1;
+    }
+
+    .slick-prev,
+    .slick-next {
+        padding: 20px;
+    }
+
+    /*.slick-prev,*/
+    /*.slick-next{*/
+    /*    top: 35%;*/
+    /*}*/
+    .slick-prev::before {
+        font-size: 2rem;
+    }
+    .slick-next::before {
+        font-size: 2rem;
+    }
+    /*.slick-next {*/
+    /*    right: 20px;*/
+    /*}*/
+    /*.slick-prev {*/
+    /*    left: 20px;*/
+    /*    z-index: 1;*/
+    /*}*/
+    .my-32 {
+        margin-top: 6rem!important; /* 128px */
+        margin-bottom: 6rem!important; /* 128px */
+    }
+
+    .mt-32 {
+        margin-top: 6rem!important; /* 128px */
+    }
+
+    .mb-32 {
+        margin-bottom: 6rem!important; /* 128px */
+    }
+    .active-link::before {
+
+        left: 2%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .about-water-mark {
+        top: -27rem;
+    }
+    .slick-next {
+        right: 270px;
+    }
+}
+
+.hover-jello:hover {
+    -webkit-animation-name: jello;
+    animation-name: jello;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    animation-iteration-count: infinite;
+}
+
+.hover-tada:hover {
+    -webkit-animation-name: tada;
+    animation-name: tada;
+    animation-iteration-count: infinite;
+}
+.hover-infinited:hover {
+    -webkit-animation-name: bounce;
+    animation-name: bounce;
+    -webkit-transform-origin: center bottom;
+    transform-origin: center bottom;
+    animation-iteration-count: infinite;
+}
